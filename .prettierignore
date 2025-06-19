@@ -1,0 +1,8 @@
+node_modules
+.next
+build
+dist
+package-lock.json
+yarn.lock
+*.svg
+*.png
