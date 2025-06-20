@@ -1,7 +1,7 @@
 # 🛍️ Discount Module App - Take Home Assignment
 
 **Author**: Chawalit Marayat  
-**Position Applied**: Fullstack Developer (Junior)  
+**Position Applied**: Software Developer (Junior)  
 **Company**: Playtorium Solutions
 
 ## 📌 Objective
