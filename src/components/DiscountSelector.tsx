@@ -25,7 +25,7 @@ export const DiscountSelector: FC<Props> = ({ discounts, setDiscounts }) => {
 
     return (
         <div className="bg-white shadow-md rounded p-4 space-y-4">
-            <h2 className="text-xl font-semibold">🎁 Discount Campaigns</h2>
+            <h2 className="text-xl font-semibold"> Discount Campaigns</h2>
 
             <div className="flex flex-wrap gap-2">
                 {[

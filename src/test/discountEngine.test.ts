@@ -1,5 +1,5 @@
 import { CartItem, DiscountInput } from '@/types/discountTypes';
-import { calculateFinalPrice } from '../utils/discountEngine';
+import { calculateFinalPrice } from '../utils/discount';
 
 describe('calculateFinalPrice', () => {
   const cart: CartItem[] = [

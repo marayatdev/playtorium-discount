@@ -25,7 +25,7 @@ export const Cart: FC<Props> = ({ cart, setCart }) => {
 
             {/* รายการสินค้าให้เลือก */}
             <div>
-                <h3 className="font-medium mb-2">📦 Product List</h3>
+                <h3 className="font-medium mb-2">Product List</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {productList.map((item, index) => (
                         <div
@@ -51,7 +51,7 @@ export const Cart: FC<Props> = ({ cart, setCart }) => {
 
             {/* แสดงตะกร้า */}
             <div>
-                <h3 className="font-medium mb-2">🧺 Items in Cart</h3>
+                <h3 className="font-medium mb-2">Items in Cart</h3>
                 {cart.length === 0 ? (
                     <p className="text-gray-500">No items in cart.</p>
                 ) : (

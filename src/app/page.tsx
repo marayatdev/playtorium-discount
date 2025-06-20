@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Cart } from "@/components/Cart";
 import { DiscountSelector } from "@/components/DiscountSelector";
 import { Summary } from "@/components/Summary";
-import { calculateFinalPrice } from "@/utils/discountEngine";
+import { calculateFinalPrice } from "@/utils/discount";
 import { CartItem, DiscountInput, DiscountResult } from "@/types/discountTypes";
 
 export default function HomePage() {
@@ -18,7 +18,7 @@ export default function HomePage() {
 
   return (
     <main className="max-w-4xl mx-auto p-6 space-y-6">
-      <h1 className="text-3xl font-bold text-center">🛍️ Discount Module</h1>
+      <h1 className="text-3xl font-bold text-center"> Discount Module</h1>
       <Cart cart={cart} setCart={setCart} />
       <DiscountSelector discounts={discounts} setDiscounts={setDiscounts} />
       <button
