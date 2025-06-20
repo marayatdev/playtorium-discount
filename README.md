@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Discount Module App - Take Home Assignment
 
-## Getting Started
+**Author**: Chawalit Marayat  
+**Position Applied**: Fullstack Developer (Junior)  
+**Company**: Playtorium Solutions
 
-First, run the development server:
+## 📌 Objective
+
+This project implements a **discount calculation module** based on a set of defined campaign rules (Coupon > On Top > Seasonal).  
+It includes a professional UI built with **Next.js, TypeScript, Tailwind CSS**, and covers multiple discount types applied to shopping cart items.
+
+---
+
+## 🧠 Features
+
+- ✅ Predefined product list with category/price
+- ✅ Add items to cart from product catalog
+- ✅ Support for multiple discount types:
+  - Fixed amount coupon
+  - Percentage discount
+  - Category-based discount
+  - Points-based discount (max 20% of total)
+  - Seasonal (every X baht, get Y baht off)
+- ✅ Apply discount order correctly: **Coupon > On Top > Seasonal**
+- ✅ Summary display of final price and discount breakdown
+- ✅ Typed with TypeScript, unit-tested with Jest
+
+---
+
+## 📂 Tech Stack
+
+| Area       | Technology               |
+| ---------- | ------------------------ |
+| Frontend   | Next.js (App Router)     |
+| Language   | TypeScript               |
+| Styling    | Tailwind CSS             |
+| UI Library | shadcn/ui + lucide-react |
+| Testing    | Jest + ts-jest           |
+
+---
+
+## 📄 Assumptions
+
+- Only one discount can be applied per **category** (Coupon/On Top/Seasonal)
+- Points discount is capped at 20% of the cart total
+- Discounts are applied in this exact order: **Coupon → On Top → Seasonal**
+- Cart item list is static and selected by user from a predefined product catalog
+- No backend or database is used (in-memory only)
+
+---
+
+## 🚀 Getting Started
 
 ```bash
-npm run dev
-# or
+# 1. Clone project
+git clone https://github.com/marayatdev/playtorium-discount.git
+cd playtorium-discount
+
+# 2. Install dependencies
+yarn
+
+# 3. Run locally
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 4. Run tests
+yarn test
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
